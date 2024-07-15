@@ -18,6 +18,7 @@ struct Order{
     std::string filledCashAmount;
     std::string filledFees;
     std::string source;
+    std::string canceledSource;
     std::string state;
     std::string stopPrice;
     std::string operator_;
