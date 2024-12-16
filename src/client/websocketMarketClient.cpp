@@ -325,7 +325,7 @@ void WebsocketMarketClient::reqDetail(const char *symbol, const std::function<vo
         candlestick.vol = data["vol"].GetString();
         candlestick.high = data["high"].GetString();
         candlestick.open = data["open"].GetString();
-        candlestick.version = atol(tick["version"].GetString());
+        candlestick.version = atol(data["version"].GetString());
         handler(candlestick);
     });
     th.detach();
